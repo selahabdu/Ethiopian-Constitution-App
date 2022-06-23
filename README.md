@@ -1,2 +1,2 @@
 # Ethiopian-Constitution-App
-selah's branch 
+Constitution App 
