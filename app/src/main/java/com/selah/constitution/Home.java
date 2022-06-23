@@ -5,11 +5,16 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import java.io.File;
 
 public class Home extends AppCompatActivity {
 
@@ -30,8 +35,10 @@ public class Home extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.item_exit:
-                Toast.makeText(getApplicationContext(), "File Item Selected", Toast.LENGTH_SHORT).show();
                 exitApp();
+                return true;
+            case R.id.item_share:
+                shareApp();
                 return true;
 
             default:
@@ -59,6 +66,15 @@ public class Home extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
+    }
+    public void shareApp(){
+        Intent shareIntent = new Intent(Intent.ACTION_SEND); // because we sent some txt
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Ethiopian Constitution");
+        String shareMessage;
+        shareMessage = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID +"\n\n"; // add package name
+        shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+        startActivity(Intent.createChooser(shareIntent, "Share Using"));
     }
 
 
