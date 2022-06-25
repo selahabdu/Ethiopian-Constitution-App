@@ -12,16 +12,74 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import java.io.File;
 
 public class Home extends AppCompatActivity {
+    ListView listView;
 
+    String[] articles={
+            //try to declare with loop
+            "Article 1",
+            "Article 2",
+            "Article 3",
+            "Article 4",
+            "Article 5",
+            "Article 6",
+            "Article 7",
+            "Article 8",
+            "Article 9",
+            "Article 10",
+            "Article 11",
+    };
+    String[] description = {
+            "Nomenclature of the State",
+            "Ethiopian Territorial Jurisdiction",
+            "The Ethiopian Flag",
+            "National Anthem of Ethiopia",
+            "Languages",
+            "Nationality",
+            "Gender Reference",
+            "Sovereignty of the People",
+            "Supremacy of the Constitution",
+            "Human and Democratic Rights",
+            "Separation of State and Religion"
+
+    };
+    private Integer[] images = {
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article,
+            R.drawable.icon_article
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        articleListAdapter articleListAdapterAdapter = new articleListAdapter(this,articles,description,images);
+
+        listView = findViewById(R.id.articles_list_view);
+        listView.setAdapter(articleListAdapterAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "Selected" + position, Toast.LENGTH_LONG).show();
+
+            }
+        });
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
