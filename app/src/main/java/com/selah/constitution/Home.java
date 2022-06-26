@@ -23,6 +23,8 @@ import java.io.File;
 public class Home extends AppCompatActivity {
     ListView listView;
 
+
+
     String[] articles={
             //try to declare with loop
             "Article 1",
@@ -49,6 +51,7 @@ public class Home extends AppCompatActivity {
             "Supremacy of the Constitution",
             "Human and Democratic Rights",
             "Separation of State and Religion"
+
 
     };
     private Integer[] images = {

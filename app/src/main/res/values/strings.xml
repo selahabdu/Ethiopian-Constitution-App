@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Ethiopian Constitution</string>
+    <string-array name="article_names">
+        <item>Article 1</item>
+        <item>Article 2</item>
+        <item>Article 3</item>
+        <item>Article 4</item>
+        <item>Article 5</item>
+        <item>Article 6</item>
+        <item>Article 7</item>
+        <item>Article 8</item>
+        <item>Article 9</item>
+        <item>Article 10</item>
+        <item>Article 11</item>
+    </string-array>
 </resources>
