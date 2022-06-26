@@ -23,6 +23,9 @@ import java.io.File;
 public class Home extends AppCompatActivity {
     ListView listView;
 
+    //try declaring the articles using loop
+//    String[] articles = new String[14];
+
 
 
     String[] articles={
@@ -54,23 +57,37 @@ public class Home extends AppCompatActivity {
 
 
     };
-    private Integer[] images = {
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article,
-            R.drawable.icon_article
-    };
+    private Integer[] images = new Integer[14];
+
+    {
+//    private Integer[] images = {
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article,
+//            R.drawable.icon_article
+//    };
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+      for(int i=0;i<12;i++){
+            images[i] = R.drawable.icon_article;
+        }
+//        int j = 1;
+//        for(int i=0;i<12;i++){
+
+//            articles[i] ="Article";
+//            j++;
+//        }
+
         articleListAdapter articleListAdapterAdapter = new articleListAdapter(this,articles,description,images);
 
         listView = findViewById(R.id.articles_list_view);
