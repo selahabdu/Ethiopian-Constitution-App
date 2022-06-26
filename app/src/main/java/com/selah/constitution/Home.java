@@ -24,38 +24,39 @@ public class Home extends AppCompatActivity {
     ListView listView;
 
     //try declaring the articles using loop
-//    String[] articles = new String[14];
-
-
-
+//    String[] articles = getResources().getStringArray(R.array.article_names);
     String[] articles={
             //try to declare with loop
             "Article 1",
             "Article 2",
-            "Article 3",
-            "Article 4",
-            "Article 5",
-            "Article 6",
-            "Article 7",
-            "Article 8",
-            "Article 9",
-            "Article 10",
-            "Article 11",
+//            "Article 3",
+//            "Article 4",
+//            "Article 5",
+//            "Article 6",
+//            "Article 7",
+//            "Article 8",
+//            "Article 9",
+//            "Article 10",
+//            "Article 11",
     };
     String[] description = {
             "Nomenclature of the State",
             "Ethiopian Territorial Jurisdiction",
-            "The Ethiopian Flag",
-            "National Anthem of Ethiopia",
-            "Languages",
-            "Nationality",
-            "Gender Reference",
-            "Sovereignty of the People",
-            "Supremacy of the Constitution",
-            "Human and Democratic Rights",
-            "Separation of State and Religion"
+//            "The Ethiopian Flag",
+//            "National Anthem of Ethiopia",
+//            "Languages",
+//            "Nationality",
+//            "Gender Reference",
+//            "Sovereignty of the People",
+//            "Supremacy of the Constitution",
+//            "Human and Democratic Rights",
+//            "Separation of State and Religion"
 
 
+    };
+    String[] detail = {
+            "This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.",
+            "The territorial jurisdiction of Ethiopia shall comprise the territory of the members of the Federation and its boundaries shall be as determined by international agreements."
     };
     private Integer[] images = new Integer[14];
 
@@ -78,7 +79,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-      for(int i=0;i<12;i++){
+      for(int i=0;i<articles.length;i++){
+
             images[i] = R.drawable.icon_article;
         }
 //        int j = 1;
@@ -88,15 +90,19 @@ public class Home extends AppCompatActivity {
 //            j++;
 //        }
 
-        articleListAdapter articleListAdapterAdapter = new articleListAdapter(this,articles,description,images);
+        articleListAdapter articleListAdapterAdapter = new articleListAdapter(this,articles,description,images,detail);
 
         listView = findViewById(R.id.articles_list_view);
         listView.setAdapter(articleListAdapterAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "Selected" + position, Toast.LENGTH_LONG).show();
+                Intent i  = new Intent(Home.this,articlesDetail.class);
+                i.putExtra("title",articles[position]);
+                i.putExtra("description",description[position]);
+                i.putExtra("detail",detail[position]);
 
+                startActivity(i);
             }
         });
 
@@ -107,7 +113,6 @@ public class Home extends AppCompatActivity {
         menuInflater.inflate(R.menu.option_menu,menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){

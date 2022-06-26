@@ -16,13 +16,16 @@ public class articleListAdapter extends ArrayAdapter<String> {
 Activity context;
 String[] articles;
 String[] description;
+String[] detail;
 Integer[] article_images;
 
-    public articleListAdapter(@NonNull  Activity context1, String[] articles, String[] description, Integer[] article_images) {
+
+    public articleListAdapter(@NonNull Activity context1, String[] articles, String[] description, Integer[] article_images, String[] detail) {
         super(context1, R.layout.article_list_layout,articles);
         this.context = context1;
         this.articles = articles;
         this.description = description;
+        this.detail = detail;
         this.article_images = article_images;
     }
 // create getView method

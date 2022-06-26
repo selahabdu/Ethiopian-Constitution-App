@@ -13,4 +13,17 @@
         <item>Article 10</item>
         <item>Article 11</item>
     </string-array>
+    <string-array name="article_description">
+        <item>Nomenclature of the State</item>
+        <item>Ethiopian Territorial Jurisdiction</item>
+        <item>The Ethiopian Flag</item>
+        <item>National Anthem of Ethiopia</item>
+        <item>Languages</item>
+        <item>Nationality</item>
+        <item>Gender Reference</item>
+        <item>Sovereignty of the People</item>
+        <item>Supremacy of the Constitution</item>
+        <item>Human and Democratic Rights</item>
+        <item>Separation of State and Religion</item>
+    </string-array>
 </resources>
