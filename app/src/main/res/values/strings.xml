@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Ethiopian Constitution</string>
+    <string name="article_1">This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.</string>
+    <string name="article_2">The territorial jurisdiction of Ethiopia shall comprise the territory of the members of the Federation and its boundaries shall be as determined by international agreements.</string>
+    <string name="article_3">1. The Ethiopian flag shall consist of green at the top, yellow in the middle and red at the bottom, and shall have a national emblem at the centre. The three colours shall be set horizontally in equal dimension</string>
+
+
     <string-array name="article_names">
         <item>Article 1</item>
         <item>Article 2</item>
