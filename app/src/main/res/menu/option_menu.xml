@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <item
+       android:id="@+id/item_share"
+       android:title="Share"
+       android:icon="@drawable/icon_share"
+       app:showAsAction="ifRoom"
+       >
+
+   </item>
+    <item
+        android:id="@+id/item_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/item_language"
+        android:title="Language" >
+        <menu >
+            <item
+                android:id="@+id/item_affan_oromo"
+                android:title="Affan Oromo" />
+            <item
+                android:id="@+id/item_amharic"
+                android:title="Amharic" />
+            <item
+                android:id="@+id/item_Enlgish"
+                android:title="English" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item_about"
+        android:title="About" />
+    <item
+        android:id="@+id/item_contact_us"
+        android:title="Contact Us" />
+    <item
+        android:id="@+id/item_exit"
+        android:title="Exit" />
+</menu>
