@@ -10,6 +10,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -22,37 +23,37 @@ import android.widget.Toast;
 import java.io.File;
 
 public class Home extends AppCompatActivity {
+    articleListAdapter articleListAdapterAdapter;
     ListView listView;
-
-
     private Integer[] images = new Integer[14];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
         Resources resources = getResources();
         String[] articles= resources.getStringArray(R.array.article_names);
         String[] description = resources.getStringArray(R.array.article_description);
         String[] detail = resources.getStringArray(R.array.article_detail);
 
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        String[] articles_am= resources.getStringArray(R.array.article_names_am);
+        String[] description_am = resources.getStringArray(R.array.article_description_am);
+        String[] detail_am = resources.getStringArray(R.array.article_detail_am);
         for(int i=0;i<articles.length;i++){
             images[i] = R.drawable.icon_article;
         }
-        articleListAdapter articleListAdapterAdapter = new articleListAdapter(this,articles,description,images,detail);
+        articleListAdapterAdapter = new articleListAdapter(this,articles,description,images,detail);
         listView = findViewById(R.id.articles_list_view);
         listView.setAdapter(articleListAdapterAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i  = new Intent(Home.this,articlesDetail.class);
-                i.putExtra("title",articles[position]);
-                i.putExtra("description",description[position]);
-                i.putExtra("detail",detail[position]);
-                startActivity(i);
-            }
-        });
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent i  = new Intent(Home.this,articlesDetail.class);
+                        i.putExtra("title",articles[position]);
+                        i.putExtra("description",description[position]);
+                        i.putExtra("detail",detail[position]);
+                        startActivity(i);
+                    }
+                });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -62,9 +63,47 @@ public class Home extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Resources resources = getResources();
+        String[] articles= resources.getStringArray(R.array.article_names);
+        String[] description = resources.getStringArray(R.array.article_description);
+        String[] detail = resources.getStringArray(R.array.article_detail);
+
+        String[] articles_am= resources.getStringArray(R.array.article_names_am);
+        String[] description_am = resources.getStringArray(R.array.article_description_am);
+        String[] detail_am = resources.getStringArray(R.array.article_detail_am);
         switch (item.getItemId()){
             case R.id.item_amharic:
-
+            {
+                articleListAdapterAdapter = new articleListAdapter(this,articles_am,description_am,images,detail_am);
+                listView = findViewById(R.id.articles_list_view);
+                listView.setAdapter(articleListAdapterAdapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent i  = new Intent(Home.this,articlesDetail.class);
+                        i.putExtra("title",articles_am[position]);
+                        i.putExtra("description",description_am[position]);
+                        i.putExtra("detail",detail_am[position]);
+                        startActivity(i);
+                    }
+                });
+            }
+                return true;
+            case R.id.item_Enlgish: {
+                articleListAdapterAdapter = new articleListAdapter(this, articles, description, images, detail);
+                listView = findViewById(R.id.articles_list_view);
+                listView.setAdapter(articleListAdapterAdapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent i = new Intent(Home.this, articlesDetail.class);
+                        i.putExtra("title", articles[position]);
+                        i.putExtra("description", description[position]);
+                        i.putExtra("detail", detail[position]);
+                        startActivity(i);
+                    }
+                });
+            }
                 return true;
             case R.id.item_exit:
                 exitApp();
@@ -72,7 +111,6 @@ public class Home extends AppCompatActivity {
             case R.id.item_share:
                 shareApp();
                 return true;
-
             default:
                 return super.onContextItemSelected(item);
         }
@@ -108,7 +146,4 @@ public class Home extends AppCompatActivity {
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
         startActivity(Intent.createChooser(shareIntent, "Share Using"));
     }
-
-
-
 }

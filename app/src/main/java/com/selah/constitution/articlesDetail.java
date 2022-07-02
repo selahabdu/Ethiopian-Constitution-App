@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class articlesDetail extends AppCompatActivity {
+    SeekBar textSizeSeekBar;
+    int textSizeValue;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_articles_detail);
+        textSizeSeekBar = findViewById(R.id.textSizeSeekBar);
         Intent intent = getIntent();
         String name = intent.getStringExtra("title");
         String description = intent.getStringExtra("description");
@@ -23,6 +27,26 @@ public class articlesDetail extends AppCompatActivity {
         article_name.setText(name);
         article_description .setText(description);
         article_detail .setText(detail);
+        textSizeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(progress > 13) {
+                    textSizeValue = progress;
+                    article_detail.setTextSize(textSizeValue);
+                }
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
 
     }
