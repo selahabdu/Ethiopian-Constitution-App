@@ -7,13 +7,13 @@
     tools:context=".aboutus">
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/tinbite"
         android:layout_width="71dp"
         android:layout_height="58dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="49dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/selah"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -26,17 +26,17 @@
         android:text="Nejat"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toEndOf="@+id/imageButton10"
+        app:layout_constraintStart_toEndOf="@+id/nejat"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/nejat"
         android:layout_width="65dp"
         android:layout_height="51dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/mura"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -49,7 +49,7 @@
         android:text="Tinbite"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/tinbite"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
@@ -62,11 +62,11 @@
         android:text="Mintesnot"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+        app:layout_constraintStart_toEndOf="@+id/minte"
+        app:layout_constraintTop_toBottomOf="@+id/nejat" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/minte"
         android:layout_width="64dp"
         android:layout_height="51dp"
         android:layout_marginStart="121dp"
@@ -76,7 +76,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/selah"
         android:layout_width="71dp"
         android:layout_height="58dp"
         android:layout_marginStart="50dp"
@@ -95,7 +95,7 @@
         android:text="Selhadin"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/selah"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
@@ -108,11 +108,11 @@
         android:text="Murad"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/mura"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/mura"
         android:layout_width="65dp"
         android:layout_height="51dp"
         android:layout_marginStart="21dp"
@@ -154,7 +154,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/btnc"
+        android:id="@+id/btncontact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
@@ -163,6 +163,6 @@
         android:text="Contact Us"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/minte" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
