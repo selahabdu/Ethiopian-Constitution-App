@@ -24,7 +24,7 @@
         <menu >
             <item
                 android:id="@+id/item_affan_oromo"
-                android:title="Affan Oromo" />
+                android:title="Afaan Oromo" />
             <item
                 android:id="@+id/item_amharic"
                 android:title="Amharic" />
