@@ -24,6 +24,5 @@ public class articlesDetail extends AppCompatActivity {
         article_description .setText(description);
         article_detail .setText(detail);
 
-
     }
 }

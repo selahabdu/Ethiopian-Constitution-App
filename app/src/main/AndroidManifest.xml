@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Constitution">
         <activity
+            android:name=".Contactus"
+            android:exported="false" />
+        <activity
+            android:name=".aboutus"
+            android:exported="false" />
+        <activity
             android:name=".articlesDetail"
             android:exported="false" />
         <activity
