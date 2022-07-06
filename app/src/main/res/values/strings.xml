@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">Ethiopian Constitution</string>
-    <string name="article_1">This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.</string>
-    <string name="article_2" translatable="false">The territorial jurisdiction of Ethiopia shall comprise the territory of the members of the Federation and its boundaries shall be as determined by international agreements.</string>
-    <string name="article_3">1. The Ethiopian flag shall consist of green at the top, yellow in the middle and red at the bottom, and shall have a national emblem at the centre. The three colours shall be set horizontally in equal dimension</string>
+    <string name="item_Home">Home</string>
+    <string name="item_Language">Language</string>
+    <string name="item_Affan_Oromo">Affan Oromo</string>
+    <string name="item_Amharic">Amharic</string>
+    <string name="item_English">English</string>
+    <string name="item_About">About</string>
+    <string name="item_Contact_Us">Contact Us</string>
+    <string name="item_Exit">Exit</string>
+
 
 
     <string-array name="article_names">
@@ -24,6 +30,12 @@
         <item>አንቀጽ 1</item>
         <item>አንቀጽ 2</item>
         <item>አንቀጽ 3</item>
+        <item>አንቀጽ 4</item>
+        <item>አንቀጽ 5</item>
+        <item>አንቀጽ 6</item>
+        <item>አንቀጽ 7</item>
+        <item>አንቀጽ 8</item>
+        <item>አንቀጽ 9</item>
     </string-array>
     <string-array name="article_names_or">
         <item>Keewwata 1</item>
@@ -50,6 +62,13 @@
         <item>የግዛቱ ስያሜ</item>
         <item>የኢትዮጵያ ግዛት ስልጣን</item>
         <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የግዛቱ ስያሜ</item>
+        <item>የኢትዮጵያ ግዛት ስልጣን</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+
     </string-array>
     <string-array name="article_detail">
         <item>This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.</item>
@@ -75,5 +94,12 @@
     <item>1. The Ethiopian flag shall consist of green at the top, yellow in the middle and red at the bottom, and shall have a national emblem at the centre. The three colours shall be set horizontally in equal dimension\n" +
         "2. The national emblem on the flag shall reflect the hope of the Nations, Nationalities, Peoples as well as religious communities of Ethiopia to live together in equality and unity.\n" +
         "3. Members of the Federation may have their respective flags and emblems and shall determine the details thereof through their respective legislatures.</item>
+        <item>The national anthem of Ethiopia, to be determined by law, shall reflect the ideals of the Constitution, the commitment of the Peoples of Ethiopia to live together in a democratic order and of their common destiny</item>
+        <item>1. All Ethiopian languages shall enjoy equal state recognition\n2. Amharic shall be the working language of the Federal Government.\n3. Members of the Federation may by law determine their respective working languages</item>
+        <item>1. Any person of either sex shall be an Ethiopian national where both or either parent is Ethiopian\n2. Foreign nationals may acquire Ethiopian nationality.\n3. Particulars relating to nationality shall be determined by law</item>
+        <item>Provisions of this Constitution set out in the masculine gender shall also apply to the feminine gender.</item>
+        <item>All sovereign power resides in the Nations, Nationalities and Peoples of Ethiopia.\n2. This Constitution is an expression of their sovereignty.3. Their sovereignty shall be expressed through their representatives elected in accordance with this Constitution and through their direct democratic participation.</item>
+        <item>All sovereign power resides in the Nations, Nationalities and Peoples of Ethiopia.\n2. This Constitution is an expression of their sovereignty.3. Their sovereignty shall be expressed through their representatives elected in accordance with this Constitution and through their direct democratic participation.</item>
+
     </string-array>
 </resources>

@@ -105,6 +105,7 @@ public class Home extends AppCompatActivity {
                         startActivity(i);
                     }
                 });
+
             }
                 return true;
             case R.id.item_Enlgish: {
