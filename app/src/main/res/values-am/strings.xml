@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">የኢትዮፕያ ህገ-መንግስት</string>
+    <string name="item_Home">መግቢያ</string>
+    <string name="item_Language">ቋንቋ</string>
+    <string name="item_AffanOromo">Affan Oromo</string>
+    <string name="item_Amharic">አማርኛ</string>
+    <string name="item_English">English</string>
+    <string name="item_About">ስለአኛ</string>
+    <string name="item_Contact_Us">ያግኙን</string>
+    <string name="item_Search">ፈልግ</string>
+    <string name="item_Share">አጋራ</string>
+    <string name="item_Exit">መውጫ</string>
+
+    <string-array name="article_names">
+        <item>አንቀጽ 1</item>
+        <item>አንቀጽ 2</item>
+        <item>አንቀጽ 3</item>
+        <item>አንቀጽ 4</item>
+        <item>አንቀጽ 5</item>
+        <item>አንቀጽ 6</item>
+        <item>አንቀጽ 7</item>
+        <item>አንቀጽ 8</item>
+        <item>አንቀጽ 9</item>
+        <item>አንቀጽ 10</item>
+        <item>አንቀጽ 11</item>
+        <item>አንቀጽ 12</item>
+        <item>አንቀጽ 13</item>
+    </string-array>
+    <string-array name="article_description">
+        <item>የግዛቱ ስያሜ</item>
+        <item>የኢትዮጵያ ግዛት ስልጣን</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የግዛቱ ስያሜ</item>
+        <item>የኢትዮጵያ ግዛት ስልጣን</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የግዛቱ ስያሜ</item>
+        <item>የኢትዮጵያ ግዛት ስልጣን</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+    </string-array>
+
+</resources>

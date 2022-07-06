@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -21,12 +22,26 @@ import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.selah.constitution.utils.LanguageConfig;
+import com.selah.constitution.utils.SharedPrefs;
+
 import java.io.File;
 
 public class Home extends AppCompatActivity {
+    SharedPrefs sharedPreferences;
+
     articleListAdapter articleListAdapterAdapter;
     ListView listView;
-    private Integer[] images = new Integer[14];
+    private Integer[] images = new Integer[110];
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        sharedPreferences = new SharedPrefs(newBase);
+        String languageCode = sharedPreferences.getLocale();
+        Context context = LanguageConfig.changeLanguage(newBase, languageCode);
+        super.attachBaseContext(context);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +51,6 @@ public class Home extends AppCompatActivity {
         String[] description = resources.getStringArray(R.array.article_description);
         String[] detail = resources.getStringArray(R.array.article_detail);
 
-        String[] articles_am= resources.getStringArray(R.array.article_names_am);
-        String[] description_am = resources.getStringArray(R.array.article_description_am);
-        String[] detail_am = resources.getStringArray(R.array.article_detail_am);
         for(int i=0;i<articles.length;i++){
             images[i] = R.drawable.icon_article;
         }
@@ -64,64 +76,67 @@ public class Home extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Resources resources = getResources();
-        String[] articles= resources.getStringArray(R.array.article_names);
-        String[] description = resources.getStringArray(R.array.article_description);
-        String[] detail = resources.getStringArray(R.array.article_detail);
-
-        String[] articles_am= resources.getStringArray(R.array.article_names_am);
-        String[] description_am = resources.getStringArray(R.array.article_description_am);
-        String[] detail_am = resources.getStringArray(R.array.article_detail_am);
+//        Resources resources = getResources();
+//        String[] articles= resources.getStringArray(R.array.article_names);
+//        String[] description = resources.getStringArray(R.array.article_description);
+//        String[] detail = resources.getStringArray(R.array.article_detail);
+//
+//        String[] articles_am= resources.getStringArray(R.array.article_names_am);
+//        String[] description_am = resources.getStringArray(R.array.article_description_am);
+//        String[] detail_am = resources.getStringArray(R.array.article_detail_am);
         switch (item.getItemId()){
             case R.id.item_search:
             {
-                SearchView searchView = (SearchView) item.getActionView();
-                searchView.setQueryHint("Search article");
-                searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-                    @Override
-                    public boolean onQueryTextSubmit(String query) {
-                        return false;
-                    }
-
-                    @Override
-                    public boolean onQueryTextChange(String newText) {
-//                        articles.getFilter().filter(newText);
-                        return false;
-                    }
-                });
+//                SearchView searchView = (SearchView) item.getActionView();
+//                searchView.setQueryHint("Search article");
+//                searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//                    @Override
+//                    public boolean onQueryTextSubmit(String query) {
+//                        return false;
+//                    }
+//
+//                    @Override
+//                    public boolean onQueryTextChange(String newText) {
+////                        articles.getFilter().filter(newText);
+//                        return false;
+//                    }
+//                });
             }
             case R.id.item_amharic:
             {
-                articleListAdapterAdapter = new articleListAdapter(this,articles_am,description_am,images,detail_am);
-                listView = findViewById(R.id.articles_list_view);
-                listView.setAdapter(articleListAdapterAdapter);
-                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Intent i  = new Intent(Home.this,articlesDetail.class);
-                        i.putExtra("title",articles_am[position]);
-                        i.putExtra("description",description_am[position]);
-                        i.putExtra("detail",detail_am[position]);
-                        startActivity(i);
-                    }
-                });
-
+                sharedPreferences.setLocale("am");
+                Home.this.recreate();
+//                articleListAdapterAdapter = new articleListAdapter(this,articles_am,description_am,images,detail_am);
+//                listView = findViewById(R.id.articles_list_view);
+//                listView.setAdapter(articleListAdapterAdapter);
+//                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                    @Override
+//                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                        Intent i  = new Intent(Home.this,articlesDetail.class);
+//                        i.putExtra("title",articles_am[position]);
+//                        i.putExtra("description",description_am[position]);
+//                        i.putExtra("detail",detail_am[position]);
+//                        startActivity(i);
+//                    }
+//                });
             }
                 return true;
             case R.id.item_Enlgish: {
-                articleListAdapterAdapter = new articleListAdapter(this, articles, description, images, detail);
-                listView = findViewById(R.id.articles_list_view);
-                listView.setAdapter(articleListAdapterAdapter);
-                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Intent i = new Intent(Home.this, articlesDetail.class);
-                        i.putExtra("title", articles[position]);
-                        i.putExtra("description", description[position]);
-                        i.putExtra("detail", detail[position]);
-                        startActivity(i);
-                    }
-                });
+                    sharedPreferences.setLocale("en");
+                Home.this.recreate();
+//                articleListAdapterAdapter = new articleListAdapter(this, articles, description, images, detail);
+//                listView = findViewById(R.id.articles_list_view);
+//                listView.setAdapter(articleListAdapterAdapter);
+//                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                    @Override
+//                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                        Intent i = new Intent(Home.this, articlesDetail.class);
+//                        i.putExtra("title", articles[position]);
+//                        i.putExtra("description", description[position]);
+//                        i.putExtra("detail", detail[position]);
+//                        startActivity(i);
+//                    }
+//                });
             }
                 return true;
             case R.id.item_exit:

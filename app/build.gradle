@@ -4,8 +4,11 @@ plugins {
 
 android {
     compileSdk 32
+    buildToolsVersion "30.0.2"
+
 
     defaultConfig {
+        resConfigs ("en","am")
         applicationId "com.selah.constitution"
         minSdk 21
         targetSdk 32

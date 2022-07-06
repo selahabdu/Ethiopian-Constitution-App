@@ -2,14 +2,14 @@
     <string name="app_name">Ethiopian Constitution</string>
     <string name="item_Home">Home</string>
     <string name="item_Language">Language</string>
-    <string name="item_Affan_Oromo">Affan Oromo</string>
+    <string name="item_AffanOromo">Affan Oromo</string>
     <string name="item_Amharic">Amharic</string>
     <string name="item_English">English</string>
     <string name="item_About">About</string>
     <string name="item_Contact_Us">Contact Us</string>
+    <string name="item_Search">Search</string>
+    <string name="item_Share">Share</string>
     <string name="item_Exit">Exit</string>
-
-
 
     <string-array name="article_names">
         <item>Article 1</item>
@@ -25,17 +25,6 @@
         <item>Article 11</item>
         <item>Article 12</item>
         <item>Article 13</item>
-    </string-array>
-    <string-array name="article_names_am">
-        <item>አንቀጽ 1</item>
-        <item>አንቀጽ 2</item>
-        <item>አንቀጽ 3</item>
-        <item>አንቀጽ 4</item>
-        <item>አንቀጽ 5</item>
-        <item>አንቀጽ 6</item>
-        <item>አንቀጽ 7</item>
-        <item>አንቀጽ 8</item>
-        <item>አንቀጽ 9</item>
     </string-array>
     <string-array name="article_names_or">
         <item>Keewwata 1</item>
