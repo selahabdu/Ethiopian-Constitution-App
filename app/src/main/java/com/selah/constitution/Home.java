@@ -106,6 +106,7 @@ public class Home extends AppCompatActivity {
             {
                 sharedPreferences.setLocale("am");
                 Home.this.recreate();
+
 //                articleListAdapterAdapter = new articleListAdapter(this,articles_am,description_am,images,detail_am);
 //                listView = findViewById(R.id.articles_list_view);
 //                listView.setAdapter(articleListAdapterAdapter);
