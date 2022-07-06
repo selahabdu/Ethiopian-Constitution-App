@@ -138,6 +138,10 @@ public class Home extends AppCompatActivity {
 //                    }
 //                });
             }
+            case R.id.item_affan_oromo:{
+                sharedPreferences.setLocale("om");
+                Home.this.recreate();
+            }
                 return true;
             case R.id.item_exit:
                 exitApp();

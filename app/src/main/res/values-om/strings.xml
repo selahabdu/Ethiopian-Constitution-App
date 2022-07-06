@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Heera Itoophiyaa</string>
+    <string name="item_Home">Fuula jalqabaa</string>
+    <string name="item_Language">Afaan</string>
+    <string name="item_AffanOromo">Affan Oromo</string>
+    <string name="item_Amharic">አማርኛ</string>
+    <string name="item_English">English</string>
+    <string name="item_About">"Waa'ee keenya"</string>
+    <string name="item_Contact_Us">Nu qunnamaa</string>
+    <string name="item_Search">Barbaaduu</string>
+    <string name="item_Share">Qooduu</string>
+    <string name="item_Exit">"Ba'uu"</string>
+</resources>

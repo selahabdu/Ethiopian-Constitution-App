@@ -8,7 +8,7 @@ android {
 
 
     defaultConfig {
-        resConfigs ("en","am")
+        resConfigs ("en","am","om")
         applicationId "com.selah.constitution"
         minSdk 21
         targetSdk 32
