@@ -3,6 +3,7 @@ package com.selah.constitution;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -72,6 +73,23 @@ public class Home extends AppCompatActivity {
         String[] description_am = resources.getStringArray(R.array.article_description_am);
         String[] detail_am = resources.getStringArray(R.array.article_detail_am);
         switch (item.getItemId()){
+            case R.id.item_search:
+            {
+                SearchView searchView = (SearchView) item.getActionView();
+                searchView.setQueryHint("Search article");
+                searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                    @Override
+                    public boolean onQueryTextSubmit(String query) {
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onQueryTextChange(String newText) {
+//                        articles.getFilter().filter(newText);
+                        return false;
+                    }
+                });
+            }
             case R.id.item_amharic:
             {
                 articleListAdapterAdapter = new articleListAdapter(this,articles_am,description_am,images,detail_am);
