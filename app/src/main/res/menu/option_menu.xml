@@ -2,9 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item
+        android:id="@+id/item_search"
+        android:title="@string/item_Search"
+        android:icon="@drawable/icon_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        ></item>
    <item
        android:id="@+id/item_share"
-       android:title="Share"
+       android:title="@string/item_Share"
        android:icon="@drawable/icon_share"
        app:showAsAction="ifRoom"
        >
@@ -12,29 +19,29 @@
    </item>
     <item
         android:id="@+id/item_home"
-        android:title="Home" />
+        android:title="@string/item_Home" />
     <item
         android:id="@+id/item_language"
-        android:title="Language" >
+        android:title="@string/item_Language" >
         <menu >
             <item
                 android:id="@+id/item_affan_oromo"
-                android:title="Affan Oromo" />
+                android:title="@string/item_AffanOromo" />
             <item
                 android:id="@+id/item_amharic"
-                android:title="Amharic" />
+                android:title="@string/item_Amharic" />
             <item
                 android:id="@+id/item_Enlgish"
-                android:title="English" />
+                android:title="@string/item_English" />
         </menu>
     </item>
     <item
         android:id="@+id/item_about"
-        android:title="About" />
+        android:title="@string/item_About" />
     <item
         android:id="@+id/item_contact_us"
-        android:title="Contact Us" />
+        android:title="@string/item_Contact_Us" />
     <item
         android:id="@+id/item_exit"
-        android:title="Exit" />
+        android:title="@string/item_Exit" />
 </menu>
