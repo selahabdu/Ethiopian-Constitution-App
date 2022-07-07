@@ -106,39 +106,13 @@ public class Home extends AppCompatActivity {
             {
                 sharedPreferences.setLocale("am");
                 Home.this.recreate();
-
-//                articleListAdapterAdapter = new articleListAdapter(this,articles_am,description_am,images,detail_am);
-//                listView = findViewById(R.id.articles_list_view);
-//                listView.setAdapter(articleListAdapterAdapter);
-//                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                    @Override
-//                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                        Intent i  = new Intent(Home.this,articlesDetail.class);
-//                        i.putExtra("title",articles_am[position]);
-//                        i.putExtra("description",description_am[position]);
-//                        i.putExtra("detail",detail_am[position]);
-//                        startActivity(i);
-//                    }
-//                });
             }
                 return true;
             case R.id.item_Enlgish: {
-                    sharedPreferences.setLocale("en");
+                sharedPreferences.setLocale("en");
                 Home.this.recreate();
-//                articleListAdapterAdapter = new articleListAdapter(this, articles, description, images, detail);
-//                listView = findViewById(R.id.articles_list_view);
-//                listView.setAdapter(articleListAdapterAdapter);
-//                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                    @Override
-//                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                        Intent i = new Intent(Home.this, articlesDetail.class);
-//                        i.putExtra("title", articles[position]);
-//                        i.putExtra("description", description[position]);
-//                        i.putExtra("detail", detail[position]);
-//                        startActivity(i);
-//                    }
-//                });
             }
+                return true;
             case R.id.item_affan_oromo:{
                 sharedPreferences.setLocale("om");
                 Home.this.recreate();

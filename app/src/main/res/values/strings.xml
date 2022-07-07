@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ethiopian Constitution</string>
     <string name="item_Home">Home</string>
@@ -10,6 +11,12 @@
     <string name="item_Search">Search</string>
     <string name="item_Share">Share</string>
     <string name="item_Exit">Exit</string>
+
+    <string-array name="article_names_or">
+        <item>Keewwata 1</item>
+        <item>Keewwata 2</item>
+        <item>Keewwata 3</item>
+    </string-array>
 
     <string-array name="article_names">
         <item>Article 1</item>
@@ -26,11 +33,6 @@
         <item>Article 12</item>
         <item>Article 13</item>
     </string-array>
-    <string-array name="article_names_or">
-        <item>Keewwata 1</item>
-        <item>Keewwata 2</item>
-        <item>Keewwata 3</item>
-    </string-array>
     <string-array name="article_description">
         <item>Nomenclature of the State</item>
         <item>Ethiopian Territorial Jurisdiction</item>
@@ -45,19 +47,6 @@
         <item>Separation of State and Religion</item>
         <item>"Separation of State and Religion"</item>
         <item>"Conduct and Accountability of Government"</item>
-        <item>"Scope of Application and Interpretation"</item>
-    </string-array>
-    <string-array name="article_description_am">
-        <item>የግዛቱ ስያሜ</item>
-        <item>የኢትዮጵያ ግዛት ስልጣን</item>
-        <item>የኢትዮጵያ ባንዲራ</item>
-        <item>የኢትዮጵያ ባንዲራ</item>
-        <item>የኢትዮጵያ ባንዲራ</item>
-        <item>የኢትዮጵያ ባንዲራ</item>
-        <item>የግዛቱ ስያሜ</item>
-        <item>የኢትዮጵያ ግዛት ስልጣን</item>
-        <item>የኢትዮጵያ ባንዲራ</item>
-
     </string-array>
     <string-array name="article_detail">
         <item>This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.</item>
@@ -78,9 +67,9 @@
         "2. The fundamental rights and freedoms specified in this Chapter shall be interpreted in a manner conforming to the principles of the Universal Declaration of Human Rights, International Covenants on Human Rights and international instruments adopted by Ethiopia.</item>
     </string-array>
     <string-array name="article_detail_am">
-    <item>This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.</item>
-    <item>The territorial jurisdiction of Ethiopia shall comprise the territory of the members of the Federation and its boundaries shall be as determined by international agreements.</item>
-    <item>1. The Ethiopian flag shall consist of green at the top, yellow in the middle and red at the bottom, and shall have a national emblem at the centre. The three colours shall be set horizontally in equal dimension\n" +
+        <item>This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.</item>
+        <item>The territorial jurisdiction of Ethiopia shall comprise the territory of the members of the Federation and its boundaries shall be as determined by international agreements.</item>
+        <item>1. The Ethiopian flag shall consist of green at the top, yellow in the middle and red at the bottom, and shall have a national emblem at the centre. The three colours shall be set horizontally in equal dimension\n" +
         "2. The national emblem on the flag shall reflect the hope of the Nations, Nationalities, Peoples as well as religious communities of Ethiopia to live together in equality and unity.\n" +
         "3. Members of the Federation may have their respective flags and emblems and shall determine the details thereof through their respective legislatures.</item>
         <item>The national anthem of Ethiopia, to be determined by law, shall reflect the ideals of the Constitution, the commitment of the Peoples of Ethiopia to live together in a democratic order and of their common destiny</item>
