@@ -76,31 +76,9 @@ public class Home extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        Resources resources = getResources();
-//        String[] articles= resources.getStringArray(R.array.article_names);
-//        String[] description = resources.getStringArray(R.array.article_description);
-//        String[] detail = resources.getStringArray(R.array.article_detail);
-//
-//        String[] articles_am= resources.getStringArray(R.array.article_names_am);
-//        String[] description_am = resources.getStringArray(R.array.article_description_am);
-//        String[] detail_am = resources.getStringArray(R.array.article_detail_am);
         switch (item.getItemId()){
             case R.id.item_search:
             {
-//                SearchView searchView = (SearchView) item.getActionView();
-//                searchView.setQueryHint("Search article");
-//                searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//                    @Override
-//                    public boolean onQueryTextSubmit(String query) {
-//                        return false;
-//                    }
-//
-//                    @Override
-//                    public boolean onQueryTextChange(String newText) {
-////                        articles.getFilter().filter(newText);
-//                        return false;
-//                    }
-//                });
             }
             case R.id.item_amharic:
             {
