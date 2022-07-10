@@ -35,7 +35,6 @@ Integer[] article_images;
 
         LayoutInflater layoutInflater = context.getLayoutInflater();
         View row = layoutInflater.inflate(R.layout.article_list_layout,null,true);
-
         ImageView articles_image = row.findViewById(R.id.articles_image);
         TextView articles_name = row.findViewById(R.id.article_name);
         TextView articles_description = row.findViewById(R.id.article_description);

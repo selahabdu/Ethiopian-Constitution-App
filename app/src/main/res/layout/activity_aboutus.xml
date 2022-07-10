@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".aboutus">
-
     <ImageButton
         android:id="@+id/tinbite"
         android:layout_width="71dp"
@@ -164,5 +163,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/minte" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

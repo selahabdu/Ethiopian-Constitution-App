@@ -21,6 +21,5 @@ Button contactbutton;
                 startActivity(contactIntent);
             }
         });
-
     }
 }
