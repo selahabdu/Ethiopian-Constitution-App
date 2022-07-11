@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ethiopian Constitution</string>
-    <string name="item_Home">Home</string>
-    <string name="item_Language">Language</string>
+    <string name="app_name">Heera Itoophiyaa</string>
+    <string name="item_Home">Fuula jalqabaa</string>
+    <string name="item_Language">Afaan</string>
     <string name="item_AffanOromo">Affan Oromo</string>
-    <string name="item_Amharic">Amharic</string>
+    <string name="item_Amharic">አማርኛ</string>
     <string name="item_English">English</string>
-    <string name="item_About">About</string>
-    <string name="item_Contact_Us">Contact Us</string>
-    <string name="item_Search">Search</string>
-    <string name="item_Share">Share</string>
-    <string name="item_Exit">Exit</string>
-
-    <string-array name="article_names_or">
-        <item>Keewwata 1</item>
-        <item>Keewwata 2</item>
-        <item>Keewwata 3</item>
-    </string-array>
+    <string name="item_About">"Waa'ee keenya"</string>
+    <string name="item_Contact_Us">Nu qunnamaa</string>
+    <string name="item_Search">Barbaaduu</string>
+    <string name="item_Share">Qooduu</string>
+    <string name="item_Exit">"Ba'uu"</string>
 
     <string-array name="article_names">
         <item>Article 1</item>
@@ -66,4 +60,5 @@
         <item>1. All Federal and State legislative, executive and judicial organs at all levels shall have the responsibility and duty to respect and enforce the provisions of this Chapter.\n" +
         "2. The fundamental rights and freedoms specified in this Chapter shall be interpreted in a manner conforming to the principles of the Universal Declaration of Human Rights, International Covenants on Human Rights and international instruments adopted by Ethiopia.</item>
     </string-array>
+
 </resources>

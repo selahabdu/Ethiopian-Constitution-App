@@ -1,52 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ethiopian Constitution</string>
-    <string name="item_Home">Home</string>
-    <string name="item_Language">Language</string>
+    <string name="app_name">የኢትዮፕያ ህገ-መንግስት</string>
+    <string name="item_Home">መግቢያ</string>
+    <string name="item_Language">ቋንቋ</string>
     <string name="item_AffanOromo">Affan Oromo</string>
-    <string name="item_Amharic">Amharic</string>
+    <string name="item_Amharic">አማርኛ</string>
     <string name="item_English">English</string>
-    <string name="item_About">About</string>
-    <string name="item_Contact_Us">Contact Us</string>
-    <string name="item_Search">Search</string>
-    <string name="item_Share">Share</string>
-    <string name="item_Exit">Exit</string>
-
-    <string-array name="article_names_or">
-        <item>Keewwata 1</item>
-        <item>Keewwata 2</item>
-        <item>Keewwata 3</item>
-    </string-array>
+    <string name="item_About">ስለአኛ</string>
+    <string name="item_Contact_Us">ያግኙን</string>
+    <string name="item_Search">ፈልግ</string>
+    <string name="item_Share">አጋራ</string>
+    <string name="item_Exit">መውጫ</string>
 
     <string-array name="article_names">
-        <item>Article 1</item>
-        <item>Article 2</item>
-        <item>Article 3</item>
-        <item>Article 4</item>
-        <item>Article 5</item>
-        <item>Article 6</item>
-        <item>Article 7</item>
-        <item>Article 8</item>
-        <item>Article 9</item>
-        <item>Article 10</item>
-        <item>Article 11</item>
-        <item>Article 12</item>
-        <item>Article 13</item>
+        <item>አንቀጽ 1</item>
+        <item>አንቀጽ 2</item>
+        <item>አንቀጽ 3</item>
+        <item>አንቀጽ 4</item>
+        <item>አንቀጽ 5</item>
+        <item>አንቀጽ 6</item>
+        <item>አንቀጽ 7</item>
+        <item>አንቀጽ 8</item>
+        <item>አንቀጽ 9</item>
+        <item>አንቀጽ 10</item>
+        <item>አንቀጽ 11</item>
+        <item>አንቀጽ 12</item>
+        <item>አንቀጽ 13</item>
     </string-array>
     <string-array name="article_description">
-        <item>Nomenclature of the State</item>
-        <item>Ethiopian Territorial Jurisdiction</item>
-        <item>The Ethiopian Flag</item>
-        <item>National Anthem of Ethiopia</item>
-        <item>Languages</item>
-        <item>Nationality</item>
-        <item>Gender Reference</item>
-        <item>Sovereignty of the People</item>
-        <item>Supremacy of the Constitution</item>
-        <item>Human and Democratic Rights</item>
-        <item>Separation of State and Religion</item>
-        <item>"Separation of State and Religion"</item>
-        <item>"Conduct and Accountability of Government"</item>
+        <item>የግዛቱ ስያሜ</item>
+        <item>የኢትዮጵያ ግዛት ስልጣን</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የግዛቱ ስያሜ</item>
+        <item>የኢትዮጵያ ግዛት ስልጣን</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የግዛቱ ስያሜ</item>
+        <item>የኢትዮጵያ ግዛት ስልጣን</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
+        <item>የኢትዮጵያ ባንዲራ</item>
     </string-array>
     <string-array name="article_detail">
         <item>This Constitution establishes a Federal and Democratic State structure. Accordingly, the Ethiopian state.shall be known as The Federal Democratic Republic of Ethiopia.</item>
@@ -66,4 +60,5 @@
         <item>1. All Federal and State legislative, executive and judicial organs at all levels shall have the responsibility and duty to respect and enforce the provisions of this Chapter.\n" +
         "2. The fundamental rights and freedoms specified in this Chapter shall be interpreted in a manner conforming to the principles of the Universal Declaration of Human Rights, International Covenants on Human Rights and international instruments adopted by Ethiopia.</item>
     </string-array>
+
 </resources>

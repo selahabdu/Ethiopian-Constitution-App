@@ -5,14 +5,16 @@
       <map>
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.105" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/drawable/icon_article.xml" value="0.105" />
-        <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/activity_articles_detail.xml" value="0.14736842105263157" />
+        <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/activity_articles_detail.xml" value="0.25" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/activity_main.xml" value="0.18342391304347827" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/article_detail_layout.xml" value="0.18342391304347827" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/article_list_layout.xml" value="0.16113744075829384" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/article_lists_layout.xml" value="0.2" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/layout/articles_layout.xml" value="0.18342391304347827" />
+        <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/menu/menu_for_article_detail.xml" value="0.2677083333333333" />
         <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/menu/option_menu.xml" value="0.2677083333333333" />
+<<<<<<< HEAD
         <entry key="..\:/Users/Murad/Desktop/Ethiopian constitution/app/src/main/res/layout/activity_aboutus.xml" value="0.18" />
         <entry key="..\:/Users/Murad/Desktop/Ethiopian constitution/app/src/main/res/layout/activity_articles_detail.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/Murad/Desktop/Ethiopian constitution/app/src/main/res/layout/activity_contactus.xml" value="0.26338199513381993" />
@@ -20,6 +22,10 @@
         <entry key="..\:/Users/Murad/Desktop/Ethiopian constitution/app/src/main/res/layout/activity_main.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/Murad/Desktop/Ethiopian constitution/app/src/main/res/layout/article_list_layout.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/Murad/Desktop/Ethiopian constitution/app/src/main/res/menu/option_menu.xml" value="0.33" />
+=======
+        <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2765" />
+        <entry key="..\:/Android/project/Ethiopian-Constitution-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_2.xml" value="0.128" />
+>>>>>>> e2fe9fdb11c46f8731c11b6b79939c9bc69e1f9f
       </map>
     </option>
   </component>
